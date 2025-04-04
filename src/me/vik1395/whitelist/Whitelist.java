@@ -14,7 +14,7 @@ public class Whitelist extends JavaPlugin implements Listener, CommandExecutor
 	public void onEnable()
 	{
 		getServer().getPluginManager().registerEvents(this, this);
-		getLogger().info("WhitelistPerm has successfully started!");
+		getLogger().info("WhitelistPerm v" + getDescription().getVersion() + " has successfully started!");
 		getLogger().info("Created by Vik1395");
 		saveDefaultConfig();
 	}
