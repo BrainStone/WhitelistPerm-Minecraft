@@ -33,6 +33,7 @@ public class Whitelist extends JavaPlugin implements Listener, CommandExecutor
 		}
 		else if(!allowed.isEmpty())
 		{
+			event.allow();
 			p.sendMessage(format(allowed));
 		}
 	}
