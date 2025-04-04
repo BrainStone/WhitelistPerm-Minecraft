@@ -31,7 +31,7 @@ public class Whitelist extends JavaPlugin implements Listener, CommandExecutor
 			event.disallow(PlayerLoginEvent.Result.KICK_OTHER, format(kicked));
 			p.kickPlayer(format(kicked));
 		}
-		else if(p.hasPermission("whitelist.allowed"))
+		else if(p.hasPermission("whitelist.allowed") && !allowed.isEmpty())
 		{
 			p.sendMessage(format(allowed));
 		}
